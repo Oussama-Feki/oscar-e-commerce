@@ -19,3 +19,4 @@ six==1.16.0
 sorl-thumbnail==12.7.0
 sqlparse==0.4.1
 text-unidecode==1.3
+
