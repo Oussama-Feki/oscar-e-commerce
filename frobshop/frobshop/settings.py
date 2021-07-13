@@ -168,7 +168,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fr'
 
 TIME_ZONE = 'UTC'
 
@@ -180,13 +180,12 @@ USE_TZ = True
 
 # Lists of languages site supports.
 LANGUAGES = (
-    ('en', _('English')),
+#    ('en', _('English')),
     ('fr', _('French')),
 )
  
-LOCALE_PATHS = [
-    os.path.join(BASE_DIR,'locale'),
-]
+
+LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
