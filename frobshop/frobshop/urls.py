@@ -23,12 +23,12 @@ if settings.DEBUG:
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
-
+    
     # The Django admin is not officially supported; expect breakage.
     # Nonetheless, it's often useful for debugging.
 
     path('admin/', admin.site.urls),
-
+    
     path('', include(apps.get_app_config('oscar').urls[0])),
 ]
 urlpatterns += staticfiles_urlpatterns()
